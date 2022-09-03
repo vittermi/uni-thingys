@@ -20,7 +20,7 @@ do
 	if (($i > 10)); then
 		d="0$i"
 	fi
-	echo "https://videolectures.unimi.it/vod/mp4:DBruschiSPLez$i.mp4/manifest.m3u8" >> $LINKS
+	echo "https://yoursource.domain.com/mp4:lesson_n$i.mp4/manifest.m3u8" >> $LINKS
 done
 
 cat $LINKS | while read line || [[ -n "$line" ]];
